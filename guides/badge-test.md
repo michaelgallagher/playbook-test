@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Badge test page
 status: in-review
 updated: 2026-06-09

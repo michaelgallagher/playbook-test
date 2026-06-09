@@ -1,5 +1,6 @@
 title: "NHS App Playbooks"
 description: "A playbook covering the approach to delivering services within the NHS App."
+theme: minima
 
 defaults:
   - scope:
