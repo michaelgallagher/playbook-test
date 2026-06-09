@@ -4,7 +4,7 @@ layout: default
 {% if page.title %}<h1 class="page-title">{{ page.title | escape }}</h1>{% endif %}
 
 {% if page.status or page.updated %}
-<div class="page-meta" style="display:flex;gap:6px;flex-wrap:wrap;margin:-0.25rem 0 1.75rem;">
+<div class="page-meta">
   {% if page.status %}
     {% if page.status == "approved" %}
       {% assign _status_color = "brightgreen" %}

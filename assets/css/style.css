@@ -32,3 +32,10 @@ nav a:hover {
   color: #0969da;
   text-decoration: underline;
 }
+
+.page-meta {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin: -0.25rem 0 1.75rem;
+}
