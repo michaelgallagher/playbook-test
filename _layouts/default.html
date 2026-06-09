@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-  {%- include head.html -%}
-  <body>
-    {%- include header.html -%}
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
-    {%- include footer.html -%}
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.6.1/github-markdown-light.min.css">
+  <style>
+    body { box-sizing: border-box; max-width: 900px; margin: 40px auto; padding: 0 20px; }
+  </style>
+</head>
+<body class="markdown-body">
+  {{ content }}
+</body>
 </html>
