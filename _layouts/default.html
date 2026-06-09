@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #24292e;
+      line-height: 1.6;
+    }
+    .page-meta {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin: -0.25rem 0 1.75rem;
+    }
+  </style>
+</head>
+<body>
+
+  {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
+
+  {% if page.status or page.updated %}
+  <div class="page-meta">
+    {% if page.status %}
+      {% if page.status == "approved" %}
+        {% assign _status_color = "brightgreen" %}
+      {% elsif page.status == "in-review" %}
+        {% assign _status_color = "yellow" %}
+      {% elsif page.status == "deprecated" %}
+        {% assign _status_color = "red" %}
+      {% else %}
+        {% assign _status_color = "lightgrey" %}
+      {% endif %}
+      {% assign _status_slug = page.status | replace: "-", "--" %}
+      <img src="https://img.shields.io/badge/status-{{ _status_slug }}-{{ _status_color }}" alt="Status: {{ page.status }}">
+    {% endif %}
+
+    {% if page.updated %}
+      {% assign _date_slug = page.updated | date: "%Y-%m-%d" | replace: "-", "--" %}
+      <img src="https://img.shields.io/badge/updated-{{ _date_slug }}-blue" alt="Updated: {{ page.updated | date: '%Y-%m-%d' }}">
+    {% endif %}
+  </div>
+  {% endif %}
+
+  {{ content }}
+
+</body>
+</html>

@@ -1,4 +1,8 @@
-# NHS App Playbook
+---
+title: NHS App playbook
+status: approved
+updated: 2026-06-09
+---
 
 > **THIS PLAYBOOK IS A WORK IN PROGRESS**
 >

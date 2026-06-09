@@ -1,2 +1,8 @@
 title: "NHS App Playbooks"
 description: "A playbook covering the approach to delivering services within the NHS App."
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
