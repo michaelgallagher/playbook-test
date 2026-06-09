@@ -1,6 +1,6 @@
 ---
 title: Archive
-status: live
+status: approved
 updated: 2026-05-22
 ---
 
