@@ -1,5 +1,4 @@
-body {
-  box-sizing: border-box;
+.container {
   max-width: 900px;
   margin: 40px auto;
   padding: 0 20px;
