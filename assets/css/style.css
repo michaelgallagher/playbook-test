@@ -1,6 +1,8 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica,
+    Arial, sans-serif;
 }
 
 .container {
@@ -16,7 +18,7 @@ nav {
 .nav-inner {
   max-width: 900px;
   margin: 0 auto;
-  padding: 0.75rem 20px;
+  padding: 1.5rem 20px;
   display: flex;
   gap: 1.25rem;
   flex-wrap: wrap;
