@@ -8,7 +8,7 @@ layout: default
   {% if page.status %}
     {% if page.status == "approved" %}
       {% assign _status_color = "brightgreen" %}
-    {% elsif page.status == "in-review" %}
+    {% elsif page.status == "draft" %}
       {% assign _status_color = "yellow" %}
     {% elsif page.status == "deprecated" %}
       {% assign _status_color = "red" %}
