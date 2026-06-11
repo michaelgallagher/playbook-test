@@ -8,15 +8,17 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  <div class="container markdown-body">
   <nav>
-    <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
-    <a href="{{ '/guides/' | relative_url }}">Guides</a>
-    <a href="{{ '/references/' | relative_url }}">References</a>
-    <a href="{{ '/open-discussions/' | relative_url }}">Open discussions</a>
-    <a href="{{ '/archive/' | relative_url }}">Archive</a>
+    <div class="nav-inner">
+      <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <a href="{{ '/guides/' | relative_url }}">Guides</a>
+      <a href="{{ '/references/' | relative_url }}">References</a>
+      <a href="{{ '/open-discussions/' | relative_url }}">Open discussions</a>
+      <a href="{{ '/archive/' | relative_url }}">Archive</a>
+    </div>
   </nav>
-  {{ content }}
+  <div class="container markdown-body">
+    {{ content }}
   </div>
 </body>
 </html>
