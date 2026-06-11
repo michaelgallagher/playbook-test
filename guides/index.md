@@ -1,4 +1,8 @@
-# Guides
+---
+title: Guides
+status: draft
+updated: 2026-06-05
+---
 
 Guides are the active, prescriptive part of the playbook. If a page tells teams what to do, how to do it, or what good looks like in the NHS App, it belongs here.
 
@@ -33,9 +37,3 @@ Some guides link out to canonical external resources where copying the source wo
 - [Technical playbook](technical-playbook.md)
 - [Test coverage quality](technical/test-coverage-quality.md)
 - [Continuous deployment: Practices and coping strategies](technical/continuous-deployment-practices.md)
-
----
-
-| Status | Last reviewed |
-| ------ | ------------- |
-| Draft  | 2026-06-05    |

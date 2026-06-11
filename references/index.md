@@ -1,4 +1,8 @@
-# References
+---
+title: References
+status: draft
+updated: 2026-06-05
+---
 
 References are the factual and contextual part of the playbook. Use them when you need to look something up, understand how the NHS App currently works, or review supporting analysis behind the active guidance.
 
@@ -25,9 +29,3 @@ References are the factual and contextual part of the playbook. Use them when yo
 ## Platform model and technical context
 
 None yet.
-
----
-
-| Status | Last reviewed |
-| ------ | ------------- |
-| Draft  | 2026-06-05    |
